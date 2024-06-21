@@ -48,7 +48,6 @@ async function getFirstName(userId) {
     }
 }
 
-
 // Fonction pour récupérer et afficher les résultats de l'utilisateur
 async function afficherResultatsUtilisateur(userId) {
     const docRef = doc(db, "Users", userId, "Questionnaire", "Dernier résultat");
@@ -64,12 +63,15 @@ async function afficherResultatsUtilisateur(userId) {
         // Mettre à jour le contenu de la div avec le prénom et les résultats récupérés
         helloPart.innerHTML = `
             <div class="greet">Salut <span>${firstName ? firstName : ''}</span> !</div>
+            <div class="pundergreet">Ci-dessous, les résultats du questionnaire qui sont enregistrés sur ton compte</div>
             <div class="resultCompte">
                 <p>Tu devrais envisager une carrière en tant que</p>
                 <p class="resultProfil">${data.result}</p>
-                <p>${data.explanation}</p>
-                <p>${data.possibilities.map(p => `${p}<br>`).join('')}</p>
-                <p>${data.conclusion}</p>
+                <div class="scrollCompte">
+                    <p class="explanation">${data.explanation}</p>
+                    <p>${data.possibilities.map(p => `${p}<br>`).join('')}</p>
+                    <p class="conclusion">${data.conclusion}</p>
+                </div>
                 <p class="resultCompteBold">Je t'invite à réserver une session gratuite de 30 minutes pour en discuter ensemble.</p>
             </div>
             <a href="prendreunrendezvous.html" class="btnCompte">Réserve ton coaching</a>
@@ -83,7 +85,6 @@ async function afficherResultatsUtilisateur(userId) {
 
         // Afficher un message indiquant qu'il n'y a pas encore de résultats
         helloPart.innerHTML = `
-            
             <div class="greet">Salut <span>${firstName ? firstName : ''}</span> !</div>
             <div>Je te souhaite la bienvenue sur ton compte</div>
             <div class="resultCompte">
@@ -91,8 +92,6 @@ async function afficherResultatsUtilisateur(userId) {
                 <p>Si tu souhaites découvrir les opportunités qui t'attendent dans le monde du numérique, je t'invite à cliquer sur le bouton ci-dessous.</p>
             </div>
             <a href="chargement.html" class="loadLink btnCompte">Vers ton métier numérique idéal</a>
-
-
         `;
 
         // Supprimer l'indicateur de localStorage s'il existe

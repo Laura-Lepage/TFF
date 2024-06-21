@@ -32,13 +32,13 @@
         "result": "Web Developer",
         "explanation": "Ce profil offre de nombreuses possibilités :",
         "possibilities": [
-        "<span class='bold'>Création et Développement</span> : Concevez et développez des sites web interactifs et attractifs.",
-        "<span class='bold'>Compétences Techniques</span> : Maîtrisez les technologies front-end (HTML, CSS, JavaScript) et back-end (Node.js, Python).",
-        "<span class='bold'>Optimisation</span> : Améliorez la performance et le référencement des sites web.",
-        "<span class='bold'>Expérience Utilisateur</span> : Créez des interfaces réactives et accessibles pour une expérience utilisateur optimale.",
-        "<span class='bold'>Gestion de Projets</span> : Collaborez efficacement avec des équipes en utilisant des outils de gestion de projets."
+        "<span class='bold'>Création et Développement</span> : Concevoir et développer des sites web interactifs et attractifs.",
+        "<span class='bold'>Compétences Techniques</span> : Maîtriser les technologies front-end (HTML, CSS, JavaScript) et back-end (Node.js, Python).",
+        "<span class='bold'>Optimisation</span> : Améliorer la performance et le référencement des sites web.",
+        "<span class='bold'>Expérience Utilisateur</span> : Créer des interfaces réactives et accessibles pour une expérience utilisateur optimale.",
+        "<span class='bold'>Gestion de Projets</span> : Collaborer efficacement avec des équipes en utilisant des outils de gestion de projets."
         ],
-        "conclusion": "Avec ce profil, vous pouvez entreprendre des projets variés, améliorer votre expertise technique et contribuer de manière significative à des initiatives web innovantes."
+        "conclusion": "Avec ce profil, tu peux entreprendre des projets variés, améliorer votre expertise technique et contribuer de manière significative à des initiatives web innovantes."
     },
     {
         "id": "question6",
@@ -72,7 +72,7 @@
         "<span class='bold'>Modélisation Statistique</span> : Appliquer des techniques statistiques avancées pour prédire des tendances futures et soutenir des stratégies commerciales.",
         "<span class='bold'>Communication</span> : Traduire les résultats de l'analyse en recommandations claires et actionnables pour les parties prenantes."
         ],
-        "conclusion": "Avec ce profil, vous pouvez transformer des données brutes en informations exploitables, améliorer la prise de décision stratégique et contribuer à la croissance de l'entreprise grâce à des insights basés sur les données."
+        "conclusion": "Avec ce profil, tu peux transformer des données brutes en informations exploitables, améliorer la prise de décision stratégique et contribuer à la croissance de l'entreprise grâce à des insights basés sur les données."
     },
     {
         "id": "question10",
@@ -106,7 +106,7 @@
         "<span class='bold'>Analyse de Données</span> : Utiliser des outils analytiques pour mesurer les performances des campagnes et optimiser les stratégies marketing.",
         "<span class='bold'>Contenu Créatif</span> : Produire du contenu attractif et pertinent pour les blogs, newsletters, et autres canaux de communication numérique."
         ],
-        "conclusion": "Avec ce profil, vous pouvez maximiser l'impact des campagnes digitales, augmenter la notoriété de la marque et générer des leads qualifiés pour soutenir la croissance de l'entreprise."
+        "conclusion": "Avec ce profil, tu peux maximiser l'impact des campagnes digitales, augmenter la notoriété de la marque et générer des leads qualifiés pour soutenir la croissance de l'entreprise."
     },
     {
         "id": "question14",
@@ -141,7 +141,7 @@
         "<span class='bold'>Responsive Design</span> : Assurer la compatibilité et la convivialité des designs sur une variété de dispositifs et de tailles d'écrans.",
         "<span class='bold'>Collaboration avec les Développeurs</span> : Travailler en étroite collaboration avec les développeurs web pour transformer les maquettes en sites web fonctionnels."
         ],
-        "conclusion": "Avec ce profil, vous pouvez donner vie à des concepts créatifs, améliorer l'ergonomie des sites web et offrir une expérience utilisateur exceptionnelle."
+        "conclusion": "Avec ce profil, tu peux donner vie à des concepts créatifs, améliorer l'ergonomie des sites web et offrir une expérience utilisateur exceptionnelle."
     },
     {
         "id": "question18",
@@ -175,7 +175,7 @@
         "<span class='bold'>Conformité Réglementaire</span> : Assurer la conformité aux normes de sécurité et aux réglementations en vigueur, telles que le RGPD ou le NIST.",
         "<span class='bold'>Formation et Sensibilisation</span> : Éduquer les employés sur les meilleures pratiques en matière de sécurité et promouvoir une culture de la sécurité dans l'organisation."
         ],
-        "conclusion": "Avec ce profil, vous pouvez contribuer à renforcer la sécurité des données et des infrastructures informatiques, réduire les risques de violations de données et protéger la réputation et la confidentialité de l'entreprise."
+        "conclusion": "Avec ce profil, tu peux contribuer à renforcer la sécurité des données et des infrastructures informatiques, réduire les risques de violations de données et protéger la réputation et la confidentialité de l'entreprise."
     },
     {
         "id": "question22",
@@ -209,6 +209,6 @@
         "<span class='bold'>Gestion des Risques</span> : Évaluer les risques associés au projet et mettre en place des stratégies d'atténuation.",
         "<span class='bold'>Communication</span> : Faciliter la communication entre les membres de l'équipe, les parties prenantes et les clients pour assurer la compréhension et la satisfaction."
         ],
-        "conclusion": "Avec ce profil, vous pouvez assurer le succès de projets variés en gérant efficacement les ressources, en surmontant les obstacles et en maintenant un haut niveau de qualité."
+        "conclusion": "Avec ce profil, tu peux assurer le succès de projets variés en gérant efficacement les ressources, en surmontant les obstacles et en maintenant un haut niveau de qualité."
     }
 ]

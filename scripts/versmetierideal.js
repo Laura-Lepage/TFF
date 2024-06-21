@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 })
 
+
 // -- Vérification Identification et stockage des résultats Firebase et Firestore --
 // Importez les fonctionnalités nécessaires depuis le SDK Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"

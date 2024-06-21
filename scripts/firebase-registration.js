@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
 // -- Ajouts des adresses emails + résultats du quiz dans Firebase et Firestore
 // Importer les fonctions nécessaires de Firebase SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
 import { getFirestore, doc, setDoc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"
 
 // Configuration Firebase
@@ -173,3 +173,28 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
 })
+
+// Ajouter un écouteur pour le lien "Mot de passe oublié ?"
+document.getElementById('forgotPasswordLink').addEventListener('click', function(e) {
+    e.preventDefault();
+    // Cacher le formulaire de connexion
+    document.getElementById('loginForm').style.display = 'none';
+    // Afficher le formulaire de récupération de mot de passe
+    document.getElementById('resetPasswordForm').style.display = 'block';
+  });
+
+// Écouteur pour la soumission du formulaire de réinitialisation de mot de passe
+document.getElementById('resetPasswordForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const messageElement = document.getElementById('message');
+
+    sendPasswordResetEmail(auth, email)
+      .then(() => {
+        messageElement.textContent = 'Un e-mail de réinitialisation de mot de passe a été envoyé !';
+      })
+      .catch((error) => {
+        messageElement.textContent = 'Erreur : ' + error.message;
+      });
+  });

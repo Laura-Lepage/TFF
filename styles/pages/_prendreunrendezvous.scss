@@ -1,5 +1,8 @@
 .calendly-inline-widget{
     @include absmiddle;
-    width: 70%;
-   
+    width: 750px;
+    height: 700px; 
+    @media screen and (min-width: 1024px){
+       width: 1000px;
+    }
 }

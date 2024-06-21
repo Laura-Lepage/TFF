@@ -1,18 +1,15 @@
 .helloPart{
     @include absmiddle;
     background-color: $beige;
-    width: 100%;
-    margin-top: 60px;
-    padding: 50px 0 75px;
+    width: 95%;
+    padding: 35px 0 60px;
     text-align: center;
     border-radius: 20px;
     border: 5px solid #fff;
     @media screen and (min-width: 700px){
         margin-top: 0;
-        width: 90%;
-    }
-    @media screen and (min-width: 1024px){
-        width: 70%;
+        width: 85%;
+        padding: 50px 0 75px;
     }
     .greet{
         font-size: 26px;
@@ -21,14 +18,32 @@
             font-weight: bold;
         }
     }
+    .pundergreet{
+        padding: 0 25px;
+    }
     .resultCompte{
         width: 90%;
-        margin: 50px auto 0;
+        margin: 30px auto 0;
         @media screen and (min-width: 1024px){
+        }
+        .resultProfil{
+            margin-bottom: 10px;
+        }
+        .explanation{
+            margin-bottom: 25px;
+            @media screen and (min-width: 1490px){
+                margin-bottom: 10px; 
+            } 
+        }
+        .conclusion{
+            margin-top: 25px;
+            @media screen and (min-width: 1490px){
+                margin-top: 10px; 
+            } 
         }
         p{
             margin: 2px;
-            line-height: 1.7;
+            
             &:nth-of-type(3), &:nth-of-type(4){
                 margin-bottom: 20px;
             }
@@ -39,9 +54,23 @@
                 margin-bottom: 50px;
             }
         }
+        .scrollCompte{
+            max-height: 250px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+            border-radius: 10px;
+            @media screen and (min-width: 1490px){
+                border: none;  
+            } 
+            p{
+                line-height: 1.7;
+            }
+        }
         .resultCompteBold{
+            margin-top: 20px;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 20px; 
         }
     }
     .btnCompte{
@@ -50,10 +79,10 @@
         padding: 15px 30px;
         text-transform: uppercase;
         border-radius: 10px;
+        letter-spacing: 1.4px;
+        font-weight: 500;
         @media screen and (min-width: 500px){
             padding: 15px 80px;
         }
     }
-    
-    
 }

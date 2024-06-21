@@ -29,7 +29,7 @@
     }
     .quiz{
         @include absmiddle;
-        width: 60%;
+        width: 75%;
         
     }
     .questionBox{
@@ -108,8 +108,18 @@
             width: 90%;
             font-size: 18px;
         }
+        .scrollcontainer{
+            max-height: 390px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+            border-radius: 10px;
+            position: relative;
+            @media screen and (min-width: 600px){
+                border: none;  
+            }  
+        }
         .resultText{
-
             margin: 0;
         }
         .resultPossibilities{
@@ -129,11 +139,13 @@
         }
         .invitation{
             font-weight: bold;
+            font-size: 20px;
+            margin-top: 10px;
         }
         .btnsProfil{
             display: flex;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 20px;
             
             .coachingBtn{
                 width: 350px;

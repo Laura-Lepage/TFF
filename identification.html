@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,8 @@
          <div class="logBox">
             <div class="iconPam"><img src="images/PamG-icon.png" alt=""></div>
             <!-- Liens pour choisir entre "S'inscrire" et "Se connecter" -->
-            <a href="#" id="signupLink">Je m'inscris</a> | <a href="#" id="loginLink">Je me connecte</a>
-             
+            <a href="#" id="signupLink">Inscris-toi</a> | <a href="#" id="loginLink">Connecte-toi</a>
             <!-- Partie "S'inscrire" -->
-            
             <div id="signupSection"  class="logSection">
                 <form id="signupForm">
                     <div>
@@ -48,13 +46,10 @@
                             J'accepte les termes et conditions.
                         </label>
                     </div>
-            
                     <button type="submit">S'inscrire</button>
                     <div class="inscriptionMsg logMsg"></div>
                 </form>
             </div>
-            
-             
             <!-- Partie "Se connecter" -->
             <div id="loginSection" class="logSection" style="display: none;">
                 <form id="loginForm">
@@ -67,18 +62,21 @@
                         <input type="password" id="loginPassword" class="signupPasswordeye" name="password" required>
                         <i class="far fa-eye eye-icon togglePassword"></i>
                     </div>
-                
                     <button type="submit">Se connecter</button>
+                    <p><a href="#" id="forgotPasswordLink">Mot de passe oublié ?</a></p>
                     <div class="connexionMsg logMsg"></div>
+                   
                 </form>
+                
+                <!-- Formulaire de récupération de mot de passe (initialement caché) -->
+                <form id="resetPasswordForm" style="display: none;">
+                    <div><input type="email" id="email" placeholder="Entre ton adresse e-mail" required /></div>
+                    <button type="submit">Récupére ton mot de passe</button>
+                </form>
+                <p id="message"></p>
             </div>
          </div>
-
-    
-
-
     </div>
-    
     <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>

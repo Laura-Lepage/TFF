@@ -1,0 +1,87 @@
+.logBox{
+    width: 70%;
+    background-color: #fff;
+    border: 2px solid $aubergine;
+    border-radius: 20px;
+    text-align: center;
+    @include absmiddle;
+    padding: 50px;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 200px;
+        position: absolute;
+        bottom: 5px;
+        right: -30px;
+        z-index: -1;
+        filter: opacity(0.2);
+    }
+    a{
+        color: $aubergine;
+        font-size: 20px;
+        font-weight: 500;
+        &:nth-of-type(1){
+            margin-right: 10px;
+        }
+        &:nth-of-type(2){
+            margin-left: 10px;
+        }
+    }
+    .boldLog{
+        font-weight: bold;
+    }
+    .password-container {
+        width: 200px;
+        position: relative;
+        margin: 0 auto;
+        @media screen and (min-width: 820px){
+            width: 300px;
+        }
+    }
+    .eye-icon {
+        cursor: pointer;
+        position: absolute;
+        right: 8px;
+        top: 33px;
+        transform: translateY(-50%);
+        color: grey;
+    }
+    .logSection{
+        padding: 20px;
+        
+        div{
+            margin-top: 15px;
+            input{
+                width: 200px;
+                margin-top: 3px;
+                @media screen and (min-width: 820px){
+                    width: 300px;
+                }
+            }
+        }
+        #agreeCheckbox{
+            width: 15px;
+           
+            
+        }
+        button{
+            width: 200px;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: $aubergine;
+            color: $beige;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            cursor: pointer;
+            @media screen and (min-width: 820px){
+                width: 300px;
+            }
+        }
+    }
+}
+.logMsg{
+    font-size: 20px;
+}
+

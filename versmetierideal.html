@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <title>Pamela G. Digital - Business Mentor</title>
+</head>
+<body>
+    <div class="beigeBoxPages boxPages">
+        <div class="cross versmetieridealCross">
+            <div class="crossLine"></div>
+            <div class="crossLine"></div>
+        </div>
+        <div id="rating-container">
+            <h3>As-tu trouvé cela utile ?</h3>
+            <div id="rating-buttons">
+                <button class="rating-button" id="thumb-up">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                </button>
+                <button class="rating-button" id="thumb-down">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="questionnaireBox">
+            <a class="back">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <img src="images/PamG-icon.png" alt="PamG_miniLogo">
+            <div class="quiz"></div>
+        </div>
+        <div class="result">
+            <div class="resultBox">
+                <div class="pamBossImg">
+                    <img src="images/PamBoss.JPG" alt="">
+                </div>
+                <div class="resultProfilBox">
+                    <div class="resultProfilBoxCenter">
+                        <span class="resultText"></span>
+                        <span class="resultProfil"></span>
+                        <div class="resultExplanation"></div>
+                        <div class="resultPossibilities"></div>
+                        <div class="resultConclusion"></div>
+                        <div class="invitation"></div>
+                        <div class="btnsProfil">
+                            <a href="prendreunrendezvous.html" class="coachingBtn">
+                                <span>Réserve ton coaching<div>30 minutes gratuites</div></span>
+                            </a>
+                            <a onclick="restartQuiz()" class="coachingBtn restartBtn"><span>Recommence le test</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>    
+    <script type="module" src="scripts/versmetierideal.js"></script> 
+    
+</body>
+</html>

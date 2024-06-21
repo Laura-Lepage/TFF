@@ -1,0 +1,214 @@
+
+[
+    {
+        "id": "question1",
+        "text": "Aimes-tu travailler avec des ordinateurs et des technologies modernes ?",
+        "yes": "question2",
+        "no": "endQuizNo"
+    },
+    {
+        "id": "question2",
+        "text": "As-tu de l'intérêt pour la création de sites web et le développement de logiciels ?",
+        "yes": "question3",
+        "no": "question6"
+    },
+    {
+        "id": "question3",
+        "text": "Es-tu attiré(e) par l'aspect visuel et interactif des sites web ?",
+        "yes": "question4",
+        "no": "question6"
+    },
+    {
+        "id": "question4",
+        "text": "Te vois-tu écrire du code et résoudre des problèmes techniques ?",
+        "yes": "question5",
+        "no": "question6"
+    },
+    {
+        "id": "question5",
+        "text": "Te sens-tu à l'aise à l'idée d'apprendre des langages de programmation comme HTML, CSS, et JavaScript ?",
+        "yes": "result",
+        "no": "question6",
+        "result": "Web Developer",
+        "explanation": "Ce profil offre de nombreuses possibilités :",
+        "possibilities": [
+        "<span class='bold'>Création et Développement</span> : Concevez et développez des sites web interactifs et attractifs.",
+        "<span class='bold'>Compétences Techniques</span> : Maîtrisez les technologies front-end (HTML, CSS, JavaScript) et back-end (Node.js, Python).",
+        "<span class='bold'>Optimisation</span> : Améliorez la performance et le référencement des sites web.",
+        "<span class='bold'>Expérience Utilisateur</span> : Créez des interfaces réactives et accessibles pour une expérience utilisateur optimale.",
+        "<span class='bold'>Gestion de Projets</span> : Collaborez efficacement avec des équipes en utilisant des outils de gestion de projets."
+        ],
+        "conclusion": "Avec ce profil, vous pouvez entreprendre des projets variés, améliorer votre expertise technique et contribuer de manière significative à des initiatives web innovantes."
+    },
+    {
+        "id": "question6",
+        "text": "Aimes-tu analyser des données et trouver des tendances ?",
+        "yes": "question7",
+        "no": "question10"
+    },
+    {
+        "id": "question7",
+        "text": "Aimes-tu créer des visuels clairs et percutants pour aider à la prise de décision ?",
+        "yes": "question8",
+        "no": "question10"
+    },
+    {
+        "id": "question8",
+        "text": "Aimes-tu appliquer des techniques statistiques avancées pour prédire des tendances et traduire les résultats en recommandations claires ?",
+        "yes": "question9",
+        "no": "question10"
+    },
+    {
+        "id": "question9",
+        "text": "Te sens-tu à l'aise à l'idée d'utiliser des outils comme SQL, Python ou Excel pour travailler avec des données ?",
+        "yes": "result",
+        "no": "question10", 
+        "result": "Data Analyst",
+        "explanation": "Ce profil offre de nombreuses possibilités :",
+        "possibilities": [
+        "<span class='bold'>Analyse de Données</span> : Extraire, nettoyer et analyser des ensembles de données complexes pour découvrir des tendances et des insights.",
+        "<span class='bold'>Compétences Techniques</span> : Maîtriser des outils et langages de programmation comme SQL, Python, et R pour manipuler les données.",
+        "<span class='bold'>Visualisation de Données</span> : Créer des visualisations claires et percutantes avec des outils comme Tableau, Power BI ou D3.js pour aider à la prise de décision.",
+        "<span class='bold'>Modélisation Statistique</span> : Appliquer des techniques statistiques avancées pour prédire des tendances futures et soutenir des stratégies commerciales.",
+        "<span class='bold'>Communication</span> : Traduire les résultats de l'analyse en recommandations claires et actionnables pour les parties prenantes."
+        ],
+        "conclusion": "Avec ce profil, vous pouvez transformer des données brutes en informations exploitables, améliorer la prise de décision stratégique et contribuer à la croissance de l'entreprise grâce à des insights basés sur les données."
+    },
+    {
+        "id": "question10",
+        "text": "Es-tu passionné(e) par le marketing digital et les stratégies en ligne ?",
+        "yes": "question11",
+        "no": "question14"
+    },
+    {
+        "id": "question11",
+        "text": "Te vois-tu planifier et exécuter des campagnes de marketing digital pour attirer et engager un public cible ?",
+        "yes": "question12",
+        "no": "question14"
+    },
+    {
+        "id": "question12",
+        "text": "Es-tu intéressé(e) par produire du contenu attractif et pertinent pour attirer une audience et promouvoir des produits ou services ?",
+        "yes": "question13",
+        "no": "question14"
+    },
+    {
+        "id": "question13",
+        "text": "Te sens-tu à l'aise de travailler avec des outils comme les réseaux sociaux mais aussi Google Analytics et SEO afin d'améliorer la visibilité en ligne ?",
+        "yes": "result",
+        "no": "question14",
+        "result": "Digital Marketer",
+        "explanation": "Ce profil offre de nombreuses possibilités :",
+        "possibilities": [
+        "<span class='bold'>Stratégie Marketing</span> : Élaborer et mettre en œuvre des stratégies marketing en ligne efficaces pour atteindre et engager le public cible.",
+        "<span class='bold'>Compétences en SEO/SEM</span> : Maîtriser les techniques de référencement (SEO) et de marketing sur les moteurs de recherche (SEM) pour améliorer la visibilité en ligne.",
+        "<span class='bold'>Gestion des Réseaux Sociaux</span> : Créer et gérer des campagnes sur les plateformes sociales pour renforcer la présence de la marque et interagir avec les clients.",
+        "<span class='bold'>Analyse de Données</span> : Utiliser des outils analytiques pour mesurer les performances des campagnes et optimiser les stratégies marketing.",
+        "<span class='bold'>Contenu Créatif</span> : Produire du contenu attractif et pertinent pour les blogs, newsletters, et autres canaux de communication numérique."
+        ],
+        "conclusion": "Avec ce profil, vous pouvez maximiser l'impact des campagnes digitales, augmenter la notoriété de la marque et générer des leads qualifiés pour soutenir la croissance de l'entreprise."
+    },
+    {
+        "id": "question14",
+        "text": "Es-tu intéressé(e) par la création de designs attrayants et fonctionnels pour des sites web ?",
+        "yes": "question15",
+        "no": "question18"
+    },
+    {
+        "id": "question15",
+        "text": "Trouves-tu important de concevoir des interfaces intuitives et une expérience fluide pour garantir une bonne expérience des utilisateurs ?",
+        "yes": "question16",
+        "no": "question18"
+    },
+    {
+        "id": "question16",
+        "text": "Te sens-tu à l'aise de présenter et de justifier tes choix de design auprès des parties prenantes et des clients ?",
+        "yes": "question17",
+        "no": "question18"
+    },
+
+    {
+        "id": "question17",
+        "text": "Te sens-tu à l'aise à l'idée d'utiliser des outils comme Adobe Photoshop, Illustrator ou Figma pour concevoir des maquettes et des prototypes ?",
+        "yes": "result",
+        "no": "question18",
+        "result": "Web Designer",
+        "explanation": "Ce profil offre de nombreuses possibilités :",
+        "possibilities": [
+        "<span class='bold'>Conception de Sites Web</span> : Créer des designs attrayants et fonctionnels pour des sites web modernes et adaptatifs.",
+        "<span class='bold'>Maîtrise des Outils de Conception</span> : Utiliser des outils comme Adobe Photoshop, Illustrator, Sketch ou Figma pour concevoir des maquettes et des prototypes.",
+        "<span class='bold'>UX/UI Design</span> : Concevoir des interfaces utilisateur intuitives (UI) et une expérience utilisateur fluide (UX) pour améliorer la satisfaction des utilisateurs.",
+        "<span class='bold'>Responsive Design</span> : Assurer la compatibilité et la convivialité des designs sur une variété de dispositifs et de tailles d'écrans.",
+        "<span class='bold'>Collaboration avec les Développeurs</span> : Travailler en étroite collaboration avec les développeurs web pour transformer les maquettes en sites web fonctionnels."
+        ],
+        "conclusion": "Avec ce profil, vous pouvez donner vie à des concepts créatifs, améliorer l'ergonomie des sites web et offrir une expérience utilisateur exceptionnelle."
+    },
+    {
+        "id": "question18",
+        "text": "Es-tu intéressé(e) par la sécurité informatique et la protection des données?",
+        "yes": "question19",
+        "no": "question22"
+    },
+    {
+        "id": "question19",
+        "text": "Es-tu intéressé(e) d'analyser des systèmes pour trouver et corriger des vulnérabilités de sécurité ?",
+        "yes": "question20",
+        "no": "question22"
+    },
+    {
+        "id": "question20",
+        "text": "Te sens-tu à l'aise de rédiger des rapports détaillés sur les incidents de sécurité et les actions correctives prises ?",
+        "yes": "question21",
+        "no": "question22"
+    },
+    {
+        "id": "question21",
+        "text": "Es-tu motivé(e) de former des employés sur les meilleures pratiques en matière de sécurité et de promouvoir une culture de la sécurité au sein d'une organisation ?",
+        "yes": "result",
+        "no": "question22",
+        "result": "Cybersecurity Specialist",
+        "explanation": "Ce profil offre de nombreuses possibilités :",
+        "possibilities": [
+        "<span class='bold'>Sécurité des Systèmes d'Information</span> : Protéger les systèmes informatiques contre les cybermenaces, les intrusions et les attaques malveillantes.",
+        "<span class='bold'>Analyse des Risques</span> : Évaluer les vulnérabilités des systèmes et des réseaux pour identifier et atténuer les risques potentiels.",
+        "<span class='bold'>Gestion des Menaces</span> : Surveiller et détecter les activités suspectes, ainsi que répondre efficacement aux incidents de sécurité.",
+        "<span class='bold'>Conformité Réglementaire</span> : Assurer la conformité aux normes de sécurité et aux réglementations en vigueur, telles que le RGPD ou le NIST.",
+        "<span class='bold'>Formation et Sensibilisation</span> : Éduquer les employés sur les meilleures pratiques en matière de sécurité et promouvoir une culture de la sécurité dans l'organisation."
+        ],
+        "conclusion": "Avec ce profil, vous pouvez contribuer à renforcer la sécurité des données et des infrastructures informatiques, réduire les risques de violations de données et protéger la réputation et la confidentialité de l'entreprise."
+    },
+    {
+        "id": "question22",
+        "text": "Es-tu intéressé(e) d'organiser, de coordonner des projets et d'élaborer des plans détaillés pour atteindre des objectifs ?",
+        "yes": "question23",
+        "no": "end"
+    },
+    {
+        "id": "question23",
+        "text": "Tu sens-tu capable de diriger et de motiver les membres d'une équipe pour assurer l'accomplissement des tâches dans les délais impartis ?",
+        "yes": "question24",
+        "no": "end"
+    },
+    {
+        "id": "question24",
+        "text": "Es-tu intéressé(e) d'apprendre des méthodes de gestion de projet telles qu'Agile ou Scrum afin d'atteindre efficacement des objectifs fixés tout en respectant les contraintes budgétaires ?",
+        "yes": "question25",
+        "no": "end"
+    },
+    {
+        "id": "question25",
+        "text": "Te sens-tu à l'aise de faciliter la communication entre les membres d'une équipe, les parties prenantes et les clients afin d'assurer la compréhension et la satisfaction ?",
+        "yes": "result",
+        "no": "end",
+        "result": "Project Manager",
+        "explanation": "Ce profil offre de nombreuses possibilités :",
+        "possibilities": [
+        "<span class='bold'>Planification de Projet</span> : Élaborer des plans détaillés pour la réalisation des objectifs du projet.",
+        "<span class='bold'>Gestion d'Équipe</span> : Diriger et motiver les membres de l'équipe pour assurer l'accomplissement des tâches dans les délais impartis.",
+        "<span class='bold'>Suivi et Reporting</span> : Surveiller la progression du projet, identifier les problèmes potentiels et fournir des rapports réguliers aux parties prenantes.",
+        "<span class='bold'>Gestion des Risques</span> : Évaluer les risques associés au projet et mettre en place des stratégies d'atténuation.",
+        "<span class='bold'>Communication</span> : Faciliter la communication entre les membres de l'équipe, les parties prenantes et les clients pour assurer la compréhension et la satisfaction."
+        ],
+        "conclusion": "Avec ce profil, vous pouvez assurer le succès de projets variés en gérant efficacement les ressources, en surmontant les obstacles et en maintenant un haut niveau de qualité."
+    }
+]

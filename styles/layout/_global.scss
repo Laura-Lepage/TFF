@@ -1,0 +1,111 @@
+body{
+    max-width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+}
+.wrapper{
+    width: 95%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+//Liens
+a{
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+//Titres de chaques parties sur HomePage
+h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    margin: 0 0 50px;
+    padding: 50px 0 0;
+    @media screen and (min-width: 820px){
+        font-size: 60px;
+    }
+}
+
+//Bouton fond aubergine
+.homebtn{
+    width: 95%;
+    height: 70px;
+    background-color: $aubergine;
+    border-radius: 15px;
+    text-transform: uppercase;
+    box-shadow: 0 2px rgb(39, 33, 33, 0.7);
+    position: relative;
+    @media screen and (min-width: 1024px){
+        width: 40%;
+    }
+    .click{
+        @include absmiddle;
+        width: 100%;
+        text-align: center;
+        font-family: "Teachers", sans-serif;
+        font-weight: 500;
+        letter-spacing: 1.3px;
+        color: $beige;
+    }
+    &:hover{
+        background-color: $aubergineHover;
+    }
+}
+
+//Icône user
+.fa-user{
+    margin-right: 10px;
+}
+
+//Pages beige
+.boxPages{
+    height: 100vh;
+    margin: 0;
+    font-family: "Teachers", sans-serif;
+    position: relative;
+    
+}
+.beigeBoxPages{
+    background-color: $beige;
+}
+.aubergineBoxPages{
+    background-color: $aubergine;
+}
+//Croix sur les pages
+.cross{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer; 
+    .crossLine{
+        width: 30px;
+        height: 2px;
+        background-color: $aubergine;
+    }
+    .lineCompte{
+        background-color: $beige;
+    }
+    .crossLine:nth-of-type(1){
+        transform: translateY(5px) rotate(45deg);
+    }
+    .crossLine:nth-of-type(2){
+        transform: translateY(3px) rotate(-45deg);
+    }
+}

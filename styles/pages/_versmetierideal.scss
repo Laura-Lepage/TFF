@@ -1,0 +1,217 @@
+//Partie Questionnaire
+.questionnaireBox{
+    background-color: #fff;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    @include absmiddle;
+    box-shadow: 5px 5px 5px 5px rgb(93, 18, 59, 0.5);
+    position: relative;
+    @media screen and (min-width: 1024px){
+        height: 40%;
+    }
+    .back{
+        width: 25px;
+        height: 25px;
+        color: $aubergine;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        .fa-arrow-left{
+            font-size: 25px;
+        }
+    }
+    img{
+        width: 60px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+    .quiz{
+        @include absmiddle;
+        width: 60%;
+        
+    }
+    .questionBox{
+        text-align: center;
+        p{
+            font-size: 24px;
+            padding-bottom: 25px;
+            @media screen and (min-width: 500px){
+                padding-bottom: 0;
+            }
+        }
+        button{
+            background-color: $aubergine;
+            padding: 10px 50px;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 1.1px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto 0;
+            @media screen and (min-width: 500px){
+                display: inline;
+            }
+            &:hover{
+                background-color: $aubergineHover;
+            }
+        }
+        @media screen and (min-width: 650px){
+            .btnyes{
+                margin-right: 3px;
+            } 
+        }   
+    }
+}
+
+//Partie Résultat
+.result{
+    display:none;
+    width: 100%;
+    @include absmiddle;
+    border-radius: 20px;
+    background-color: #fff;
+    @media screen and (min-width: 1235px){
+        box-shadow: 5px 5px 5px 5px rgb(93, 18, 59, 0.5);
+        width: 80%; 
+    }   
+    .resultBox{
+        display: flex;
+        width: 100%;
+        text-align: center; 
+    }
+    .pamBossImg{
+        display: none;
+        @media screen and (min-width: 1235px){
+            width: 30%;
+            display: flex;
+        }   
+        img{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        &::after{
+            @include whitefilter_before(0.1);
+        }  
+    }
+    .resultProfilBox{
+        position: relative;
+        width: 100%;
+        @media screen and (min-width: 1235px){
+            width: 70%;  
+        }   
+        .resultProfilBoxCenter{
+            @include absmiddle;
+            width: 90%;
+            font-size: 18px;
+        }
+        .resultText{
+
+            margin: 0;
+        }
+        .resultPossibilities{
+
+            line-height: 1.4;
+            font-size: 16px;
+            .bold{
+                font-weight: bold;
+            }
+        }
+        .resultExplanation{
+            margin: 15px 0 20px;
+        }
+        .resultConclusion{
+            width: 90%;
+            margin: 20px auto;
+        }
+        .invitation{
+            font-weight: bold;
+        }
+        .btnsProfil{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            
+            .coachingBtn{
+                width: 350px;
+                height: 60px;
+                background-color: $aubergine;
+                color: $beige;
+                border-radius: 10px;
+                position: relative;
+                &:not(:last-child){
+                    margin-right: 5px;
+                }
+                span{
+                    width: 100%;
+                    @include absmiddle;
+                    font-size: 18px;
+                    div{
+                        font-size: 12px;
+                        margin-top: 5px;
+                        text-transform: uppercase;
+                    }
+                }
+                
+    
+            }
+
+
+
+        }
+        
+
+    }
+}
+.resultProfil{
+    font-size: 34px;
+    font-family: "Gochi Hand", cursive;
+    margin: 20px 0;
+}
+
+//Pouces
+#rating-container {
+    text-align: center;
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    translate: -50% 0 0;
+    bottom: 0;
+    background-color: #fff;
+ 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: none;
+    border: 2px solid #000;
+    border-bottom: none;
+    z-index: 10;
+   
+    h3{
+        margin: 20px 0 10px;
+    }
+}
+#rating-buttons {
+    margin-bottom: 6px;
+}
+.rating-button {
+    font-size: 22px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    display: inline-block;
+    &:hover{
+        background-color: rgb(225, 225, 225);
+        border-radius: 50%;
+    }
+}
+#thumb-up{
+    color: #144f14;
+}
+#thumb-down{
+    color: #a40202;
+}
+

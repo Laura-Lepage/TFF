@@ -1,0 +1,36 @@
+@mixin transition($duree : .3s, $effet : ease-in-out){
+    transition: $duree all $effet;
+}
+@mixin absmiddle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50% 0;
+}
+@mixin minmax($minsize){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($minsize, 1fr));
+}
+@mixin blackfilter_before ($trans : 0.5){
+    content:'';
+    background-color: rgb(0, 0, 0, ($trans));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@mixin whitefilter_before ($trans : 0.5){
+    content:'';
+    background-color: rgb(250, 250, 250, ($trans));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@mixin menuTypo ($weight : 400, $size : 40px){
+    font-family: "DM Serif Display", serif;
+    font-weight: $weight;
+    font-size: $size;
+}

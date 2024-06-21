@@ -1,0 +1,121 @@
+footer{
+    background-color: $beige;
+    padding: 30px 0;
+    font-family: "Teachers", sans-serif;
+    h2{
+        font-size: 45px;
+        margin: 0 0 25px;
+        padding: 0;
+    }
+    a{
+        color: $aubergine;
+    }
+}
+// Réseaux sociaux
+.reseauxBox{
+    text-align: center;
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    div{
+        position: relative;
+        background-color: $aubergine;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    a:not(:last-child){
+        margin-right: 15px;
+    }
+    .fa-brands{
+        color: #fff;
+        font-size: 25px;
+        @include absmiddle;
+    }
+}
+// Menu footer
+.navsBox{
+    a{
+        &:hover{
+            color: #000;
+        }
+    }
+    .menuFooterNav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 40px 0 20px;
+        a{
+            margin-bottom: 10px;
+        }  
+        @media screen and (min-width: 1024px){
+            flex-direction: row;
+            justify-content: center;
+            a:not(:last-child){
+                margin-right: 20px;
+            }  
+        }
+    }
+    .footerbtn{
+        width: 400px;
+        margin: 0 auto 50px;
+        height: 50px;
+        text-transform: none;
+    }
+    .politicsNav{
+        text-align: center;
+        font-size: 14px;
+        span:not(:last-child)::after{
+            content: '｜';
+            margin: 0 5px;
+        }
+    }
+}
+.createdby{
+    background-color: #000;
+    padding: 10px 35px;
+    width: 100%;
+    color: #fff;
+    text-align: right;
+    font-family: "Teachers", sans-serif;  
+}
+.cookie{
+    background-color: $beige;
+    width: 90%;
+    color: $aubergine;
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0 0;
+    padding: 40px 25px;
+    border: 2px solid $aubergine;
+    text-align: center;
+    z-index: 10;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 2s ease-out;
+    .policy{
+        width: 80%;
+        margin: 5px auto 30px;
+    }
+    button{
+        background-color: $aubergine;
+        border: none;
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            background-color: $aubergineHover;
+        }
+    }
+}
+.cookieShow{
+    transform: translateY(0);
+    opacity: 1;
+
+}

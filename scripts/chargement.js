@@ -47,12 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Redirection en fonction de l'état de connexion de l'utilisateur
             if (userLoggedIn) {
                 // Vérifier si des résultats sont déjà enregistrés
-                // if (hasResults) {
-                //     if (!confirm("Es-tu sûr(e) de vouloir recommencer? Tes résultats existants seront remplacés.")) {
-                //         // Si l'utilisateur annule, ne rien faire
-                //         return;
-                //     }
-                // }
+                if (hasResults) {
+                    if (!confirm("Es-tu sûr(e) de vouloir recommencer? Tes résultats existants seront remplacés.")) {
+                        // Si l'utilisateur annule, ne rien faire
+                        return;
+                    }
+                }
                 window.location.href = 'chargement.html';
             } else {
                 window.location.href = 'identification.html';

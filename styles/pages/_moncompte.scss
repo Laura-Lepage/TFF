@@ -24,26 +24,20 @@
     .resultCompte{
         width: 90%;
         margin: 30px auto 0;
-        @media screen and (min-width: 1024px){
-        }
         .resultProfil{
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .explanation{
             margin-bottom: 25px;
             @media screen and (min-width: 1490px){
-                margin-bottom: 10px; 
+                margin-bottom: 20px; 
             } 
         }
         .conclusion{
             margin-top: 25px;
-            @media screen and (min-width: 1490px){
-                margin-top: 10px; 
-            } 
         }
         p{
             margin: 2px;
-            
             &:nth-of-type(3), &:nth-of-type(4){
                 margin-bottom: 20px;
             }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/style.min.css">
     <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
     <title>Pamela G. Digital - Business Mentor</title>
 </head>
 <body>
@@ -170,6 +171,27 @@
                 </div>
             </div>
         </div>
+        <div class="slideform">
+            <a href="" class="emailIcon">
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+            </a>
+            <form id="emailForm">
+                <div class="msgintro">N'hésite pas à me contacter si tu as des questions ou si tu as besoin d'informations supplémentaires.<br>Je suis là pour t'aider !</div>
+                <label for="name">Ton prénom :</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+            
+                <label for="email">Ton adresse email :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <label for="message">Ton message :</label><br>
+                <textarea id="message" name="message" rows="10" required></textarea><br><br>
+            
+                <!-- Utilisation de mailto: avec les champs préremplis -->
+                <a id="sendEmail" href="" target="_blank">Envoyer le message</a>
+            </form>
+        </div>
         <div class="aubergineline"></div>
     </main>
     <footer>
@@ -214,5 +236,7 @@
     <script type="module" src="scripts/main.js"></script> 
     <script type="module" src="scripts/chargement.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>   
 </body>
 </html>

@@ -193,7 +193,77 @@ transform: translateY(0);
     width: 100%;
     height: 5px;
     background-color: $aubergine;
+}
+.slideform{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    transform: translateX(85%);
+    transition: transform 0.3s ease;
+   
+    
+ 
 
 }
+.slideformback{
+    transform: translateX(0);
+}
+.emailIcon{
+    width: 90px;
+    height: 90px;
+    background-color: $aubergine;
+    border-radius: 50%;
+    position: relative;
+    .fa-envelope{
+        color: #fff;
+        @include absmiddle;
+        font-size: 30px;
+    }
+}
+#emailForm{
+    text-align: center;
+    background-color: $beige;
+    padding: 40px 20px 50px;
+    border-radius: 2%;
+    width: 400px;
+    @media screen and (min-width: 565px){
+       width: 460px;
+    }
+    .msgintro{
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+   
+  
+    input{
+        width: 350px;
+        margin-top: 5px;
+        @media screen and (min-width: 565px){
+            width: 420px;
+        }
+    }
+    textarea{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 350px;
+        @media screen and (min-width: 565px){
+            width: 420px;
+        }
+    }
+    #sendEmail{
+        background-color: $aubergine;
+        padding: 15px 77px;
+        color: #fff;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        font-weight: 500;
+        @media screen and (min-width: 565px){
+            padding: 15px 113px;
+        }
+    }
+}
+
 
 

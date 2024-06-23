@@ -228,6 +228,44 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 })
 
+const emailIcon = document.querySelector('.emailIcon');
+
+// Écoutez les clics sur le lien emailIcon
+emailIcon.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Sélectionnez le parent .slideform
+    const slideform = document.querySelector('.slideform');
+
+    // Toggle de la classe slideFormback sur .slideform
+    slideform.classList.toggle('slideformback');
+});
+
+const sendEmailLink = document.getElementById('sendEmail');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+
+    sendEmailLink.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const subject = `Message de ${encodeURIComponent(nameInput.value)}`;
+        const body = `${encodeURIComponent(messageInput.value)}%0A%0AEnvoyé%20par%20${encodeURIComponent(emailInput.value)}`;
+
+        const email = `mailto:coach@example.com?subject=${subject}&body=${body}`;
+
+        sendEmailLink.setAttribute('href', email);
+
+        // Ouvrir le client de messagerie de l'utilisateur
+        window.open(email, '_blank');
+    });
+
+    tippy('.emailIcon', {
+      content: `Tu peux m'envoyer un e-mail ici !`,
+      animation: 'scale-extreme',
+      theme: 'light',
+  })
+
 
 
 
